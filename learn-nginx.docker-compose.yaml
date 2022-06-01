@@ -1,0 +1,12 @@
+# 实验  学习nginx配置服务
+# 通过 Volume 的方式挂载到 nginx 容器中
+# : 左侧为宿主机，右侧为容器`
+version: "3"
+services:
+  nginx-l:
+    image: nginx:alpine
+    ports:
+      - 4000:80
+    volumes:
+      - .:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf

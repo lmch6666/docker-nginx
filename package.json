@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve . -p 3000",
+    "start:server": "node server.js",
+    "serverbuild": "serve -s .",
+    "learn:nginx": "docker-compose -f learn-nginx.docker-compose.yaml up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
