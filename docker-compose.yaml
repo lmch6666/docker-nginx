@@ -12,3 +12,10 @@ services:
       dockerfile: nginx.Dockerfile
     ports:
       - 4000:80
+  simpleproject:
+    build:
+      context: .
+      dockerfile: sp.Dockerfile
+    ports:
+      - 3000:3000
+    
